@@ -26,6 +26,7 @@ dependencies {
 
     implementation 'com.auth0:java-jwt:4.4.0'
     implementation 'org.postgresql:postgresql:42.7.4'
+    runtimeOnly 'org.flywaydb:flyway-database-postgresql:10.21.0'
 
     implementation 'org.projectlombok:lombok-mapstruct-binding:0.2.0'
     implementation 'org.mapstruct:mapstruct:1.6.2'
@@ -44,3 +45,4 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
+
